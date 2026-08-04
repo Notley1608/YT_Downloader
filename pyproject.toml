@@ -1,0 +1,20 @@
+[project]
+name = "yt-downloader"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Notley1608", email = "oscarnotley@hotmail.co.uk" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pytubefix>=10.11.0",
+    "streamlit>=1.50.0",
+]
+
+[project.scripts]
+yt-downloader = "yt_downloader:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"
